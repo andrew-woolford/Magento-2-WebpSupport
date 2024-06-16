@@ -5,7 +5,7 @@ So I started to create this to try and get Webp images to work in Magento 2 but 
 
 This is the new Dockerfile which was used in Mark Shusts Magento docker setup
 
-'''FROM markoshust/magento-php:8.3-fpm-1
+```FROM markoshust/magento-php:8.3-fpm-1
 
 USER root
 
@@ -23,5 +23,6 @@ RUN apk add --no-cache \
 RUN docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype
 RUN docker-php-ext-install gd
 
-USER app'''
+USER app```
+
 
