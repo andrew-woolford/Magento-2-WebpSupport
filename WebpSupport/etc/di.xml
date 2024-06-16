@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Funky Squid Labs Ltd. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\MediaStorage\Model\File\Validator\NotProtectedExtension">
+        <plugin name="funkysquid_webpsupport_add_extension" type="FunkySquid\WebpSupport\Plugin\MediaConfig" sortOrder="1"/>
+    </type>
+    <type name="Magento\Framework\File\Mime">
+        <plugin name="funkysquid_webpsupport_add_mime_type" type="FunkySquid\WebpSupport\Plugin\MediaConfig" sortOrder="1"/>
+    </type>
+</config>
