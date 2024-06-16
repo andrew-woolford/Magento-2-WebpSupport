@@ -23,6 +23,6 @@ RUN apk add --no-cache \
 RUN docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype
 RUN docker-php-ext-install gd
 
-USER app```
+USER app
 
 
